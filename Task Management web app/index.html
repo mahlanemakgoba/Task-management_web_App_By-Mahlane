@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center">Task Management</h2>
+  
+        <label for="">Title : </label>
+        <input type="text" id="title" />
+        <label for="">Description :</label>
+        <input type="text" id="description" />
+        <label for="">Date:</label>
+        <input type="date" id="date" />
+        <label for="">Time:</label>
+        <input type="time" id="time" />
+        <button onclick="scheduleReminder()" style="width: 100%">Add</button>
+  
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Date & Time</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="reminderTableBody"></tbody>
+        </table>
+      </div>
+  
+      <audio id="notificationSound" src="mixkit-happy-bells-notification-937.wav"></audio>
+  
+
+    </body>
+    <script src="app.js"></script>
+
+</html>
